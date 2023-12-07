@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ru">
+<!--Головной раздел сайта-->
+<head>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/ideas.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Книжный магазин</title>
+    <link rel="icon" href="../img/kitty.png"><!-- 32×32 -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <!--Название магазина и основные кнопки-->
+    <header>    
+        <div class = "zakrep">
+            <div class="geo-phone-entrance">
+                <p class="geo">Россия, Москва</p>
+                <p class="geo">Адреса магазинов</p>
+                <a class="geo" href="tel:89109689294">8-999-999-91-91 - круглосуточно </a>
+                <a href="../html/login.html" class="reg">Вход и регистрация</a>
+            </div>
+            <div class="logo">
+                <a href="../html/index.html">
+                 <img src="../img/kitty.png" width="80" height="80" />
+                </a>
+            </div>
+            <div class="name">
+                Книжный магазин
+            </div>
+            <button class="cart" id="cart">
+                <img class="cart__image" src="../img/cart.png" alt="Cart" />
+                <div class="cart__num" id="cart_num">0</div>
+            </button>
+        </div>
+        <input id="burger" type="checkbox" />
+        <label class="menu-btn" for="burger">
+            <span></span>
+        </label>
+        <nav class = "menu">
+            <ul>
+                <li class="li-menu"><a class = "katalog" href="../html/shopList.html">Каталог</a>
+                    <ul>
+                        <li><a href="#">Художественная литература</a></li>
+                        <li><a href="#">Научная литература</a></li>
+                        <li><a href="#">Комиксы и манга</a></li>
+                        <li><a href="#">Книги на иностранных языках</a></li>
+                        <li><a href="#">Книги для детей</a></li>
+                        <li><a href="#">Образования</a></li>
+                        <li><a href="#">Хобби и увлечения</a></li>
+                    </ul>
+                </li>
+                <li class="li-menu"><a href="#">Акции</a></li>
+                <li class="li-menu"><a href="#">Распродажа</a></li>
+                <li class="li-menu"><a href="#">Книжный журнал</a></li>
+                <li class="li-menu"><a href="#">Что ещё почитать?</a></li>
+                <li class="li-menu"><a href="#">Подарочные сертефикаты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="ideas">
+            <h1 class="ideasHeading">Что ещё почитать?</h1>
+            <div class="ideasContainer">
+
+                <div class="idea" id="first">
+                    <div class="ideaTitle">
+                        <p class="ideaName">Русская классическая литература</p>
+            
+                    </div>
+                    <div class="ideaDescription">
+                        <img src="../img/anna.jpg" width="150" height="240" alt="" class="ideaAvatar">
+                        <p class="ideaText">
+                            Лев Толстой - Анна Каренина
+                            <br><br>История всепоглощающей страсти, история замужней женщины, полюбившей красавца офицера и бросившей своего мужа наперекор всему: мнению света, общепринятой морали, своей совести.
+                            "Анну Каренину" экранизировали 30 раз, музыку к балету писали Чайковский и Родион Щедрин, главную героиню в кино играли Грета Гарбо и Вивьен Ли, Алла Тарасова и Татьяна Самойлова, Софи Марсо и Кира Найтли.
+                            Эта книга, конечно, гораздо больше, чем просто роман о любви, это целая наука о семье, об обществе и о жизни.                        
+                        </p>
+                    </div>
+                    <div class="ideaDescription">
+                        <img src="../img/prestuplenie.jpg" width="150" height="240" alt="" class="ideaAvatar">
+                        <p class="ideaText">
+                            Федор Достоевский - Преступление и наказание
+                            <br><br>Главный герой романа Родион Раскольников решается на убийство, чтобы доказать себе и миру, что он не "тварь дрожащая", а "право имеет". Главным предметом исследования писателя становится процесс превращения добропорядочного, умного и доброго юноши в убийцу, а также то, как совершивший преступление Раскольников может искупить свою вину.                        
+                        </p>
+                    </div>
+                    <div class="ideaDescription">
+                        <img src="../img/otci.jpg" width="150" height="240" alt="" class="ideaAvatar">
+                        <p class="ideaText">
+                            Иван Тургенев - Отцы и дети
+                            <br><br>Споры главного героя Евгения Базарова, называющего себя нигилистом и отрицающего расхожие представления о жизни, искусстве, морали, природе человека, и его антагониста Павла Кирсанова, аристократа до мозга костей, состаляют главную проблематику романа.
+                            Но сюжетная канва строится скорее на внутреннем конфликте самого Базарова. Только что отрицавший все и вся герой, не веривший в любовь, смеявшийся над своим приятелем, способным на нежные чувства, вдруг сам страстно и пылко влюбляется.
+                            И все вдруг переворачивается вверх дном — с любовью Базаров совладать не в силах.                        
+                        </p>
+                    </div>
+                    </div>
+
+                <div class="idea" id="second">
+                <div class="ideaTitle">
+                    <p class="ideaName">Зарубежная классическая литература</p>
+        
+                </div>
+                <div class="ideaDescription">
+                    <img src="../img/arka.jpg" width="150" height="240" alt="" class="ideaAvatar">
+                    <p class="ideaText">
+                        Э.М. Ремарк - Триумфальная арка
+                        <br><br>Место действия – Париж накануне Второй мировой войны. Герой – беженец из Германии, без документов, скрывающийся и от французов, и от нацистов, хирург, спасающий человеческие жизни. Героиня – итальянская актриса, окруженная поклонниками, вспыльчивая, как все артисты, прекрасная и неотразимая.
+                        И время, когда влюбленным довелось встретиться, и город, пронизанный ощущением надвигающейся катастрофы, становятся героями этого романа.                    
+                    </p>
+                </div>
+                <div class="ideaDescription">
+                    <img src="../img/soborpb.jpg" width="150" height="240" alt="" class="ideaAvatar">
+                    <p class="ideaText">
+                         Виктор Гюго - Собор Парижской Богоматери
+                        <br><br>Знаменитый исторический роман Гюго. Именно благодаря его появлению мы с вами можем любоваться одним из самых красивых готических соборов в мире — в самом центре Парижа. Гюго привлек внимание к собору своим произведением, причем сделал это намеренно, так как Нотр-Дам собирались снести. Автор и не скрывал, что главный герой его романа — сам собор Парижской Богоматери. Но читатель, несомненно, запомнит яркие образы этой книги — прекрасной цыганки Эсмеральды, благородного, доброго душой уродца Квазимодо, коварного священника, терзаемого запретными чувствами к Эсмеральде, и многие другие.                    
+                    </p>
+                </div>
+                <div class="ideaDescription">
+                    <img src="../img/graf.jpg" width="150" height="240" alt="" class="ideaAvatar">
+                    <p class="ideaText">
+                        Александр Дюма - Граф Монте-Кристо
+                        <br><br>Неоднократно экранизированную историю молодого моряка Эдмона Дантеса, заточенного по подлому навету в зловещий замок Иф, совершившего оттуда дерзкий побег,
+                        ставшего обладателем несметных богатств острова Монте-Кристо и положившего жизнь на то, чтобы изощренно отомстить обидчикам, знают все, – однако нам
+                        по-прежнему доставляет удовольствие возвращаться к ней, снова и снова переживая все ее увлекательные перепетии.                    
+                    </p>
+                </div>
+                </div>
+
+                <div class="idea" id="third">
+                <div class="ideaTitle">
+                    <p class="ideaName">Агата Кристи - королева детективов</p>
+        
+                </div>
+                <div class="ideaDescription">
+                    <img src="../img/nigga.jpg" width="150" height="240" alt="" class="ideaAvatar">
+                    <p class="ideaText">
+                        Агата Кристи - Десять негритят
+                        <br><br>Десять никак не связанных между собой людей в особняке на уединенном острове... Кто вызвал их сюда таинственным приглашением? Зачем кто-то убивает их, одного за другим, самыми невероятными способами? Почему все происходящее так тесно переплетено с веселым детским стишком?
+                    </p>
+                </div>
+                <div class="ideaDescription">
+                    <img src="../img/vostex.jpg" width="150" height="240" alt="" class="ideaAvatar">
+                    <p class="ideaText">
+                        Агата Кристи - Убийство в "Восточном экспрессе"
+                        <br><br>Находившийся в Стамбуле великий сыщик Эркюль Пуаро возвращается в Англию на знаменитом "Восточном экспрессе", в котором вместе с ним едут, кажется, представители всех возможных национальностей. Один из пассажиров, неприятный американец по фамилии Рэтчетт, предлагает Пуаро стать своим телохранителем, поскольку считает, что его должны убить.                  
+                    </p>
+                </div>
+                <div class="ideaDescription">
+                    <img src="../img/rodgek.jpg" width="150" height="240" alt="" class="ideaAvatar">
+                    <p class="ideaText">
+                        Агата Кристи - Убийство Роджера Экройда
+                        <br><br>Поначалу убийство эсквайра Роджера Экройда не казалось полиции загадочным — все указывало на виновность пасынка убитого. Но иначе считает Эркюль Пуаро, который недавно переехал в эти места, в очередной раз решив уйти на покой. Он начинает расследование, имея вокруг множество подозреваемых — родственников и знакомых эсквайра, каждый из которых был заинтересован в его смерти. Повествование ведется от имени доктора Шеппарда, последнего, кто видел Экройда живым...                    
+                    </p>
+                </div>
+                </div>
+
+                <div class="idea" id="fourth">
+                <div class="ideaTitle">
+                    <p class="ideaName">Фэнтези</p>
+        
+                </div>
+                <div class="ideaDescription">
+                    <img src="../img/narnia.jpg" width="150" height="240" class="ideaAvatar">
+                    <p class="ideaText">
+                        Льюс К. - Хроники Нарнии, 1950
+                        <br><br>Однажды четверо детей – Питер, Сьюзен, Эдмунд и Люси – начинают исследовать дом, в который приехали погостить. Одна из сестёр забирается в шкаф и, как по волшебству, попадает в волшебную страну Нарнию. Так начинаются легендарные приключения детей в краях, скованных вечными морозами.
+                    </p>
+                </div>
+                <div class="ideaDescription">
+                    <img src="../img/vlastelin.jpg" width="150" height="240" alt="" class="ideaAvatar">
+                    <p class="ideaText">
+                        Толкин Дж. - Властелин колец, 1955
+                        <br><br>Хоббит Бильбо Бэггинс уходит на покой и оставляет своему племяннику кольцо, которое делает владельца невидимым. Это маленькое украшение может решить исход кровавой войны, захлестнувшей некогда процветающий край. Чтобы обезопасить свою страну, Фродо решает скрыться с кольцом. Вместе с ним в дорогу отправляются его друзья – Пиппин, Мерри и верный слуга Сэм.                    
+                    </p>
+                </div>
+                <div class="ideaDescription">
+                    <img src="../img/vedmak.jpg" width="150" height="240" alt="" class="ideaAvatar">
+                    <p class="ideaText">
+                        Сапковский А. - Ведьмак. Меч Предназначения, 1992
+                        <br><br>Главный герой легендарного цикла – ведьмак Геральт. Мрачный и нелюдимый, он за плату сражается с чудовищами, спасая от них жителей королевства, и больше всего на свете не хочет оказываться в центре политических интриг. Но у великого Предназначения свои планы…                    </p>
+                </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <address>
+            <div class="textcols">
+                <div class="textcols-item1">
+                    <div class="foothead"><h1>Книжный магазин</h1></div>
+                    <p class="info">Наш книжный магазин – сеть книжных 
+                        <br>магазинов, успешно работающих в Москве 
+                        <br>и других регионах России.
+                        <br><br>А ещё это – крупный интернет-магазин книг.
+                        <br> В нём вы можете заказывать книги в любое 
+                        <br>время 24 часа в сутки.</p>
+                </div>
+                <div class="textcols-item2">
+                    <div class="foothead"><h1>В наших магазинах</h1></div>
+                    <a class="foota" href="#">Адреса магазинов</a>
+                    <br><a class="foota" href="#">Наши партнёры</a>
+                    <br><a class="foota" href="tel:89109689294">Позвонить по номеру</a>
+                    <br><a class="foota" href="#">О компании</a>
+                    <br><a class="foota" href="https://www.consultant.ru/document/cons_doc_LAW_305/">Закон о защите прав потребителей</a>
+                    <br><a class="foota" href="#">Хотите у нас работать?</a>
+                </div>
+                <div class="textcols-item3">
+                    <div class="foothead"><h1>В интернет-магазине</h1></div>
+                    <a class="foota" href="#">Доставка и оплата</a>
+                    <br><a class="foota" href="#">Бонусная программа</a>
+                    <br><a class="foota" href="#">Вопросы и ответы</a>
+                    <br><a class="foota" href="#">Обратная связь</a>
+                    <br><a class="foota" href="mailto:zubeeva_alina@mail.ru">Написать письмо</a>
+                    <br><a class="foota" href="#">Акции</a>
+                </div>
+            </div>
+        </address>
+        <br>
+        <div class="icons">
+            <span id="vk"><i class="fa-brands fa-vk"></i></span>
+            <span id="ig"><i class="fa-brands fa-instagram"></i></span>
+            <span id="tg"><i class="fa-brands fa-telegram"></i></span>
+        </div>
+        <br><br>
+    </footer>
+    <!--<script src="script.js"></script>-->
+    <script src="../js/ideas.js"></script>
+</body>
+</html>

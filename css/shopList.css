@@ -1,0 +1,791 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(rgb(229, 238, 255), #eae8ff, rgb(244, 228, 255), rgb(197, 215, 250));
+    position: relative;
+    min-height:100vh;
+    overflow-x: hidden;
+    margin: 0px; 
+}
+
+.name{
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    font-size: 70px; 
+    font-family: 'Orelega One', serif;
+}
+
+main{
+    padding-top: 160px;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 100%;
+}
+
+header{
+    background:rgb(184, 206, 248);
+    position: fixed;
+    width: 100%;
+    height: 120px;
+    margin-bottom: 100px;
+    z-index: 9999;
+}
+
+h1 {
+    color: rgb(48, 8, 141);
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+
+.reg {
+    top: 0px;
+    text-align: right;
+    margin-left: auto;
+    width: max-content;
+    margin-right: 5%;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+    position: fixed;
+    right: 0;
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 10px;
+    z-index: 9999;
+    font-family: 'Inter', sans-serif;
+}
+
+.reg:hover{
+    background:rgb(166, 193, 245);
+}
+
+.geo-phone-entrance {
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: 35px;
+    font-family: 'Inter', sans-serif;
+    background:rgb(176, 202, 250);
+}
+
+.geo:hover{
+    background:rgb(166, 193, 245);
+}
+
+.geo {
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 20px;
+    padding-left: 20px;
+    font-size: 14px; 
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.logo{
+    margin-right: 2%;
+    margin-left: 2%;
+    float: left; 
+}
+
+.zakrep{
+    position: fixed;
+    width: 100%;
+    height: 120px;
+    margin-bottom: 100px;
+    z-index: 9999;
+}
+
+#burger {
+    visibility: hidden;
+}
+
+.name{
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    font-family: 'Orelega One', serif;
+}
+
+.menu {
+    position: fixed;
+    margin-top: 100px;
+    width: 100%;
+	display: table;
+    z-index: 9999;
+    background:rgb(184, 206, 248);
+}
+.menu ul {
+	display: table-row;
+}
+.menu li {
+	display: table-cell;
+}
+.menu ul li:hover, .menu a:hover {
+	background:rgb(166, 193, 245);
+}
+.menu li a {
+	display: block;
+	padding: 8px 15px;
+	color: #fff;
+	text-align: center;
+    text-decoration: none;
+    transition: .3s linear;
+    font-family: 'Inter', sans-serif;
+}
+.katalog::after {
+	display: inline-block;
+	width: 0;
+	height: 0;
+	margin-left: .255em;
+	vertical-align: .255em;
+	content: "";
+	border-top: 3px solid;
+	border-right: 3px solid transparent;
+	border-bottom: 0;
+	border-left: 3px solid transparent;
+}
+.menu li:hover ul  {
+	display: block;
+	position: absolute;
+	top: 100%;
+	left: 0px;
+	margin: 0;
+	padding: 10px 20px;
+	width: 248px;
+	z-index: 9999;
+    background:rgb(184, 206, 248);
+    
+}
+.menu ul ul  {
+	display: none;
+}
+.menu ul ul li  {
+	display: block;
+	padding: 5px 0;
+    transition: .3s linear;
+}
+.menu ul ul li a  {
+	display: block;
+	padding: 0;
+	text-align: left;
+}
+
+ul {
+    list-style: none; 
+    padding-left: 0;
+    list-style-type: none;
+    overflow: hidden;
+}
+
+footer{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+}
+  
+footer .textcols{
+    width: 100%;
+    display: grid;
+    padding: 2%;
+    grid-template-columns: 1fr 1fr  1fr;
+    grid-gap: 20px;
+}
+
+.cart {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    transition: 0.1s;
+    cursor: pointer;
+    position: fixed; /* Фиксированное расположение */
+    top: 43px; /* в правом верхнем углу */
+    right: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+    padding: 15px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+}
+  
+  /* Увеличиваем кнопку при наведении на нее */
+.cart:hover {
+    transform: scale(1.1);
+}
+  /* Стилизуем счетчик товаров */
+.cart__num {
+    position: absolute;
+    background-color: rgb(166, 193, 245);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    top: -5px;
+    right: -5px;
+}
+
+.cart__image{
+    width: 50px;
+    height: 50px;
+}
+
+.foota{
+    color: black;
+    text-decoration: none;
+    font-family: 'Zen Old Mincho', serif;
+    margin-left: 10px;
+}
+
+.foota:hover{
+    text-decoration: underline;
+}
+
+.info{
+    color: black;
+    font-family: 'Zen Old Mincho', serif;
+}
+
+.icons{
+    display:flex;
+    width:100%;
+    height:auto;
+    justify-content: center;
+    column-gap: 1rem;
+    transform-style: preserve-3d;
+}
+.icons #vk, .icons #tg, .icons #ig{
+    width:3rem;
+    height:3rem;
+    font-size: 1.5rem;
+    text-align: center;
+    border-radius: 50%;
+    color:white;
+    padding-top: 0.75rem;
+    cursor:pointer;
+    margin-top:1rem;
+    box-shadow: 0px 0px 9px 2.5px rgba(20, 20, 21, 0.45);
+    position:relative;
+    overflow: hidden;
+    transform-style: preserve-3d;
+    z-index: 1;
+}
+  
+.icons #vk::after{
+    content:'';
+    position:absolute;
+    background:radial-gradient(rgb(17, 82, 223), rgb(113, 146, 255));
+    width:100%;
+    height:100%;
+    top:-3rem;
+    left:0;
+    transition:1s ease-in;
+    z-index: -1;
+}
+.icons #tg:after{
+    content:'';
+    position:absolute;
+    background:radial-gradient(rgb(44, 93, 198), rgb(12, 36, 115));
+    width:100%;
+    height:100%;
+    top:-3rem;
+    left:0;
+    transition:1s ease-in;
+    z-index: -1;
+}
+.icons #ig:after{
+    content:'';
+    position:absolute;
+    background:linear-gradient(to bottom right, rgb(184, 4, 175), rgb(253, 140, 10));
+    width:100%;
+    height:100%;
+    top:-3rem;
+    left:0;
+    transition:1s ease-in;
+    z-index: -1;
+}
+.icons #vk:hover:after, .icons #tg:hover:after, .icons #ig:hover:after{
+    transform:translateY(3rem);
+    z-index: -1;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+.product {
+    padding: 30px 0;
+    padding-right: 80px;
+}
+  
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 225px);
+    width: 100%;
+    max-width: 1000px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    justify-items: center;
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
+    row-gap: 40px;
+    margin: 0 auto;
+}
+.card {
+    width: 225px;
+    min-height: 350px;
+    -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    border-radius: 4px;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+    position: relative;
+}
+.card .card__label {
+    padding: 4px 8px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: #ff6633;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+  }
+  .card:hover {
+    -webkit-box-shadow: 4px 8px 16px white;
+    box-shadow: 4px 8px 16px white;
+  }
+  .card__top {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 220px;
+    flex: 0 0 220px;
+    position: relative;
+    overflow: hidden;
+  }
+  .card__image {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .card__image > img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+    object-fit: contain;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+  }
+  .card__image:hover > img {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  .card__bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+    padding: 10px;
+  }
+  .card__prices {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    font-size: 10px;
+    margin: 30px;
+  }
+  .card__price {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+  }
+  .card__price:after {
+    content: "₽";
+    margin-left: 4px;
+    position: relative;
+  }
+  .card__price--discount {
+    font-weight: 700;
+    font-size: 19px;
+    color: #414141;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap-reverse;
+    flex-wrap: wrap-reverse;
+  }
+  .card__price--discount::before {
+    padding-top: 2px;
+    content: "Со скидкой";
+    font-weight: 400;
+    font-size: 11px;
+    color: #bfbfbf;
+  }
+  .card__price--common {
+    font-weight: 400;
+    font-size: 17px;
+    color: #606060;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap-reverse;
+    flex-wrap: wrap-reverse;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+  }
+  .card__price--common::before {
+    padding-top: 2px;
+    content: "Обычная";
+    font-weight: 400;
+    font-size: 11px;
+    color: #bfbfbf;
+  }
+  .card__title {
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 150%;
+    color: #414141;
+  }
+  
+  .card__title:hover {
+    color: rgb(48, 8, 141);
+  }
+  .card__add {
+    font-family: 'Inter', sans-serif;
+    background: rgb(184, 206, 248);
+    display: block;
+    width: 100%;
+    font-weight: 400;
+    font-size: 17px;
+    color: rgb(48, 8, 141);
+    padding: 10px;
+    text-align: center;
+    border: 1px solid rgb(48, 8, 141);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.2s;
+    margin-top: auto;
+  }
+  .card__add:hover {
+    background-color: rgb(96, 150, 250);
+    color: #fff;
+  }
+
+  /*korzina*/
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.33); /* Небольшое затемнение на фоне */
+    z-index: 1000; /* Поверх всех окон */
+    width: 100%;
+    height: 100%;
+    display: none; /* По умолчанию скрываем окно */
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    overflow-y: scroll;
+    z-index: 10000;
+  }
+  
+  /* Стилизация контейнера окна */
+  .popup__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Распределяем элементы внутри равномерно */
+    width: 100%;
+    max-width: 800px;
+    min-height: 300px;
+    background-color: #fff;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    position: relative;
+  }
+  
+  /* Элементы окна (заголовок, список товаров, вывод стоимости) */
+  .popup__item {
+    border-bottom: 1px solid #ddd;
+    padding: 20px;
+  }
+  
+  .popup__item:last-of-type {
+    border-bottom: none;
+  }
+  
+  .popup__title {
+    font-size: 20px;
+  }
+  
+  /* Стили для вывода товара */
+  .popup__product {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .popup__product-wrap {
+    display: flex;
+    align-items: center;
+  }
+  
+  .popup__product-image {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-right: 10px;
+  }
+  
+  .popup__product-title {
+    font-family: 'Inter', sans-serif;
+    max-width: 300px;
+    font-weight: 500;
+    font-size: 17px;
+  }
+  
+  .popup__product-price {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    margin-right: 15px;
+  }
+  
+  /* Стили для кнопки удаления товара */
+  .popup__product-delete {
+    font-family: 'Inter', sans-serif;
+    border-radius: 15px;
+    border: none;
+    background: none;
+    font-size: 12px;
+    padding: 5px;
+    cursor: pointer;
+    color: #d62240;
+  }
+  
+  .popup__product-plus {
+    font-family: 'Inter', sans-serif;
+    border-radius: 15px;
+    border: none;
+    background: none;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 25px;
+    padding: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    cursor: pointer;
+    color: #d62240;
+  }
+  
+  .popup__product-minus {
+    font-family: 'Inter', sans-serif;
+    border-radius: 15px;
+    border: none;
+    background: none;
+    font-size: 18px;
+    margin: 25px;
+    padding: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    cursor: pointer;
+    color: #d62240;
+  }
+  
+  .popup__product-count{
+    font-family: 'Inter', sans-serif;
+    color: #000;
+  }
+  
+  button:hover{
+    background-color: #85a2ff8c;
+  }
+
+  /* Стили для вывода стоимости товаров */
+.popup__cost {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 5px;
+  }
+  
+  .popup__cost-title {
+    margin-right: 15px;
+    font-size: 18px;
+    color: #364364;
+    text-align: right;
+  }
+  
+  .popup__cost-value {
+    font-size: 18px;
+  }
+  
+  /* Стили для кнопки закрытия окна */
+  .popup__close {
+    border: none;
+    background: none;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+    padding: 20px;
+    color: rgba(54, 67, 100, 0.7);
+    font-size: 20px;
+  }
+  
+  .popup__close:hover {
+    color: rgb(54, 67, 100);
+  }
+  
+  .popup--open {
+    display: flex;
+  }
+
+
+@media (max-width: 1383px) {
+    .cart{
+        top: 43px; /* в правом верхнем углу */
+        right: 16%;
+    }
+    footer{
+      padding: 40px;
+    }
+    .geo{
+      visibility: hidden;
+    }
+    .reg{
+      top: 0px;
+      text-align: left;
+      margin-left: 5%;
+      width: max-content;
+      font-weight: 300;
+      text-decoration: none;
+      color: white;
+      position: fixed;
+      left: 0;
+      font-size: 14px;
+      padding: 10px;
+      z-index: 1;
+    }
+}
+
+@media (max-width: 1244px) {
+    .cart{
+        right: 14%;
+    }
+}
+
+@media (max-width: 1090px) {
+    .name{
+        margin-top: 10px;
+        font-size: 50px;
+    }
+    footer .textcols{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 800px) {
+    .cart{
+        right: 12%;
+    }
+}
+
+@media (max-width: 705px) {
+    footer .textcols{
+      grid-template-columns: repeat(1, 1fr);
+      text-align: center;
+    }
+    .name{
+        margin-top: 13px;
+        font-size: 40px;
+    }
+    .logo img{
+        margin-top: 9px;
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media (max-width: 688px) {
+    .foothead{
+      font-size: 10px;
+    }
+}
+
+@media (max-width: 610px) {
+    .name{
+        margin-top: 15px;
+        font-size: 35px;
+    }
+    .logo img{
+        margin-top: 9px;
+        width: 60px;
+        height: 60px;
+    }
+    .cart{
+        right: 12%;
+    }
+}
+
+@media (max-width: 560px) {
+    .name{
+        margin-top: 20px;
+        font-size: 30px;
+    }
+    .cart{
+        right: 13%;
+    }
+}
+
+@media (max-width: 485px) {
+    .cart{
+        right: 25%;
+    }
+}
+
+@media (max-width: 450px) {
+    .name{
+        font-size: 30px;
+    }
+}

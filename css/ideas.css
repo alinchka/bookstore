@@ -1,0 +1,170 @@
+h1 {
+    color: rgb(48, 8, 141);
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+    padding-bottom: 10px;
+}
+
+.ideas::before{
+    content:'';
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    background-repeat: repeat;
+    z-index: -1;
+}
+.ideas{
+    position: relative;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding-top: 40px;
+    padding-right: 80px;
+}
+
+.ideasContainer{
+    margin-top: 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+.idea{
+    outline: solid;
+    cursor: pointer;
+    width: 70%;
+    background-color: rgba(255,255,255,0.1);
+    padding:2vw 4vw;
+    border-radius: 3vw;
+    backdrop-filter: blur(2vw);
+    margin-bottom: 3vw;
+    overflow:hidden;
+}
+.ideaTitle{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ideaTitle::before, .ideaTitle::after{
+    position: absolute;
+    content:'';
+    right:0vw;
+    top:calc(50% - 3px);
+    width: 2vw;
+    height: 3px;
+    background-color: #fff;
+    transition:transform 0.5s ease;
+}
+.ideaName{
+    font-family: 'Inter', sans-serif;
+    font-size: 30px;
+}
+
+.ideaDescription{
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    height:0;
+    overflow:hidden;
+    transition:all 0.6s ease;
+}
+.idea.active > .ideaDescription{
+    height:17vw;
+    margin-top: 2vw;
+}
+.idea.active > .ideaTitle::before{
+    transform:rotate(-45deg);
+}
+.idea.active > .ideaTitle::after{
+    transform:rotate(45deg);
+}
+.ideaAvatar{
+    margin-left: 5%;
+}
+.ideaText{
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    margin-left: 6%;
+    margin-right: 8%;
+}
+
+@media (max-width:1370px){
+    .idea.active > .ideaDescription{
+        height:23vw;
+    }
+}
+
+@media (max-width:1160px){
+    .ideaText {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 13;
+        -webkit-box-orient: vertical;
+    }
+    .idea.active > .ideaDescription{
+        height:30vw;
+    }
+    .ideaName{
+        font-size: 20px;
+    }
+}
+
+@media (max-width:860px){
+    .ideaText {
+        font-size: 14px;
+        -webkit-line-clamp: 9;
+    }
+    .ideaName{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
+@media (max-width:770px){
+    .ideaAvatar {
+        width: 120px;
+        height: 190px;
+        margin-left: 2%;
+    }
+}
+
+@media (max-width:660px){
+    .ideaAvatar {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .ideaDescription{
+        flex-direction: column;
+    }
+    .idea.active > .ideaDescription{
+        height:60vw;
+    }
+    .ideaText {
+        padding-top: 5px;
+    }
+}
+
+@media (max-width:580px){
+    .idea.active > .ideaDescription{
+        height:80vw;
+    }
+    .ideaText {
+        font-size: 11px;
+        padding-top: 4px;
+    }
+    .ideas{
+        padding-top: 20px;
+    }
+    .ideasHeading{
+        text-align: center;
+    }
+}
