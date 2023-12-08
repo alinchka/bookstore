@@ -644,3 +644,9 @@ footer .textcols{
         right: 13%;
     }
 }
+
+@media (max-width: 362px) {
+    .name{
+        font-size: 27px;
+    }
+}
