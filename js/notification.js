@@ -5,14 +5,9 @@ function createNotification() {
     const newNotification = document.createElement('div');
     newNotification.classList.add('notification');
     newNotification.textContent = "Уведомление";
-
     const productDelete = document.createElement("button");
-    
     productDelete.classList.add("popup__product-delete");
     productDelete.innerHTML = "&#10006;";
-
-
-
     newNotification.appendChild(productDelete);
     notificationList.appendChild(newNotification);
     notificationCounter++;
@@ -24,8 +19,7 @@ function createNotification() {
         updateCounter();
       }
     });
-
-    }
+}
 
 function updateCounter() {
   const counter = document.querySelector('.p-circle');
