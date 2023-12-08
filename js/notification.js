@@ -32,4 +32,4 @@ function updateCounter() {
   counter.textContent = notificationCounter;
 }
 
-intervalId = setInterval(createNotification, 300000);
+intervalId = setInterval(createNotification, 45000);
